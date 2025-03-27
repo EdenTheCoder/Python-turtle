@@ -4,7 +4,7 @@ let canvas = document.getElementById("canvas")
 
 
 function set(){
-    canvas.style.height = height.innerText;
-    canvas.style.width = width.innerText;
+    canvas.style.height = height.innerText + "px";
+    canvas.style.width = width.innerText + "px";
 
 }
