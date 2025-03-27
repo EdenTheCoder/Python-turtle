@@ -25,7 +25,7 @@ class pos{
 
 let arr = []
 
-canavs.onclick = function(e){
+document.onclick = function(e){
     const box = element.getBoundingClientRect()
     const xCenter = (box.left + box.right) / 2
     const yCenter = (box.top + box.bottom) / 2
