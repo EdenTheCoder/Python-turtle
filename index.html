@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Python Turtle Maker By EdenTheCoder</h1>
-    
-    <input type="number" id="width"><label for="width">width</label><br>
-    <input type="number" id="height"><label for="height">height</label><br>
-    <button id="set" onclick="set()">Submit</button>
-    <button id="make">make</button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Python Turtle Maker By EdenTheCoder</h1>
 
-    <div id="canvas" style="background-color: cadetblue;"></div>
+		<input type="number" id="width" />
+		<label for="width">width</label>
+		<br />
+		<input type="number" id="height" />
+		<label for="height">height</label>
+		<br />
+		<input type="url" id="url" />
+		<label for="url">(optional) Image Backround</label>
+		<br />
+		<button id="set" onclick="set()">Submit</button>
+		<button id="make">make</button>
+		<input type="checkbox" id="pen" checked />
+		<label for="pen">Draw</label>
 
+		<div
+			id="canvas"
+			style="
+				background-color: cadetblue;
+				background-image: url();
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			"></div>
 
-    <script src="index.js"></script>
-</body>
+		<p id="output"></p>
+		<style>
+			.dot {
+				position: absolute;
+				background: red;
+				color: red;
+				width: 5px;
+				height: 5px;
+				border-radius: 10px;
+				pointer-events: none;
+			}
+		</style>
+		<script src="index.js"></script>
+	</body>
 </html>
